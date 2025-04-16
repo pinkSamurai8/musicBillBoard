@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Zodiac Catalog</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+
+<body>
+  <header class="navbar">
+    <div class="navbar__container">
+      <a href="#home">Home</a>
+      <a href="#zodiac">Play</a>
+      <a href="#watch">Watch</a>
+      <a href="#about">About</a>
+    </div>
+  </header>
+
+
+  <main>
+
+    <section id="home" class="section">
+      <div class="content-box hero">
+        <h1>Match your birthday vibe with the hottest artist of today 🎵</h1>
+        <div class="hero-content">
+          <img src="https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg" alt="" class="hero-image" />
+          <div class="hero-text">
+            <p>Ever wonder which of the hottest artists shares your zodiac?
+              You’re in the right place! Browse our catalog of chart-topping artists and discover your musician match.</p>
+            <a href="#zodiac" class="btn">Browse the Catalog</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="zodiac" class="section">
+    <h1>🔮 Music Zodiac Catalog</h1>
+    <p>Enter your birth month to reveal your artist-aligned energy!</p>
+
+    <div class="search-area">
+      <input type="text" id="monthInput" placeholder="e.g. March" />
+      <button onclick="searchByMonth()">Find My Artist</button>
+    </div>
+
+    <div class="view-all">
+        <button onclick="displayAllArtists()" class="secondary-btn">View All Artists</button>
+    </div>
+
+    <!--dance gif 2 secs-->
+    <div id="loadingImage" style="display: none; margin-top: 20px;">
+      <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTBlcHc0Mnp3YWNkc29wc3Y5ZmVrbmxrZ3pyZ2tuZXJpN3N6bmllcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VknszmgmlUwrC/giphy.gif" alt="Revealing..." class="reveal-gif" />
+    </div>
+
+    <!--artists info -->
+    <div id="result" class="card-container"></div>
+  </section>
+
+  <section id="watch" class="section">
+    <div class="content-box">
+    <h2>Check out Coachella 2025<br/><br/></h2>
+    <p>
+      <iframe width="560" height="315"
+       src="https://www.youtube.com/embed/U5Wzuqb1RGA?si=HJdH_HOGzfqV9_vA"
+        title="YouTube video player" frameborder="0" allow="accelerometer;
+         autoplay; clipboard-write; encrypted-media; gyroscope;
+          picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="content-box">
+    <h2>About</h2>
+    <p>Hi! I'm Faith, I study computer science with anticipation to become a software designer.
+       I designed this site as a fun project. I've always been fascinated with zodiac signs
+       (well before realizing how deep the zodiac rabbit hole goes, of course), and who doesn't
+        love music? I thought it would be fun to create a place where you could type in your 
+        birthday and be paired with a top-charting musician. This was my first time using JavaScript,
+         but I was able to apply some of the knowledge I gained from learning C++ and Java. 
+         The fundamentals are so important, I can see how they're applicable from language to language.
+      Hope you had some fun exploring! Thanks for visiting.
+    </p>
+  </div>
+  </section>
+
+    
+  </main>
+  <footer><p>&copy; 2025 - Faith Okwuoha, Snap catalog project</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
